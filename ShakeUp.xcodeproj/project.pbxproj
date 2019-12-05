@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A3957A62398F9E9003040BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A52398F9E9003040BA /* AppDelegate.swift */; };
+		7A3957A82398F9E9003040BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A72398F9E9003040BA /* SceneDelegate.swift */; };
+		7A3957AA2398F9E9003040BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A92398F9E9003040BA /* ContentView.swift */; };
+		7A3957AC2398F9EC003040BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957AB2398F9EC003040BA /* Assets.xcassets */; };
+		7A3957AF2398F9EC003040BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957AE2398F9EC003040BA /* Preview Assets.xcassets */; };
+		7A3957B22398F9EC003040BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957B02398F9EC003040BA /* LaunchScreen.storyboard */; };
+		7A3957BD2398F9ED003040BA /* ShakeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957BC2398F9ED003040BA /* ShakeUpTests.swift */; };
+		7A3957C82398F9ED003040BA /* ShakeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957C72398F9ED003040BA /* ShakeUpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A3957B92398F9ED003040BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A39579A2398F9E9003040BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A3957A12398F9E9003040BA;
+			remoteInfo = ShakeUp;
+		};
+		7A3957C42398F9ED003040BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A39579A2398F9E9003040BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A3957A12398F9E9003040BA;
+			remoteInfo = ShakeUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A3957A22398F9E9003040BA /* ShakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3957A52398F9E9003040BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A3957A72398F9E9003040BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7A3957A92398F9E9003040BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A3957AB2398F9EC003040BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A3957AE2398F9EC003040BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A3957B12398F9EC003040BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A3957B32398F9EC003040BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A3957B82398F9ED003040BA /* ShakeUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3957BC2398F9ED003040BA /* ShakeUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeUpTests.swift; sourceTree = "<group>"; };
+		7A3957BE2398F9ED003040BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A3957C32398F9ED003040BA /* ShakeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3957C72398F9ED003040BA /* ShakeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeUpUITests.swift; sourceTree = "<group>"; };
+		7A3957C92398F9ED003040BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A39579F2398F9E9003040BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3957B52398F9ED003040BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3957C02398F9ED003040BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A3957992398F9E9003040BA = {
+			isa = PBXGroup;
+			children = (
+				7A3957A42398F9E9003040BA /* ShakeUp */,
+				7A3957BB2398F9ED003040BA /* ShakeUpTests */,
+				7A3957C62398F9ED003040BA /* ShakeUpUITests */,
+				7A3957A32398F9E9003040BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A3957A32398F9E9003040BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957A22398F9E9003040BA /* ShakeUp.app */,
+				7A3957B82398F9ED003040BA /* ShakeUpTests.xctest */,
+				7A3957C32398F9ED003040BA /* ShakeUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A3957A42398F9E9003040BA /* ShakeUp */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957A52398F9E9003040BA /* AppDelegate.swift */,
+				7A3957A72398F9E9003040BA /* SceneDelegate.swift */,
+				7A3957A92398F9E9003040BA /* ContentView.swift */,
+				7A3957AB2398F9EC003040BA /* Assets.xcassets */,
+				7A3957B02398F9EC003040BA /* LaunchScreen.storyboard */,
+				7A3957B32398F9EC003040BA /* Info.plist */,
+				7A3957AD2398F9EC003040BA /* Preview Content */,
+			);
+			path = ShakeUp;
+			sourceTree = "<group>";
+		};
+		7A3957AD2398F9EC003040BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957AE2398F9EC003040BA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A3957BB2398F9ED003040BA /* ShakeUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957BC2398F9ED003040BA /* ShakeUpTests.swift */,
+				7A3957BE2398F9ED003040BA /* Info.plist */,
+			);
+			path = ShakeUpTests;
+			sourceTree = "<group>";
+		};
+		7A3957C62398F9ED003040BA /* ShakeUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957C72398F9ED003040BA /* ShakeUpUITests.swift */,
+				7A3957C92398F9ED003040BA /* Info.plist */,
+			);
+			path = ShakeUpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A3957A12398F9E9003040BA /* ShakeUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3957CC2398F9ED003040BA /* Build configuration list for PBXNativeTarget "ShakeUp" */;
+			buildPhases = (
+				7A39579E2398F9E9003040BA /* Sources */,
+				7A39579F2398F9E9003040BA /* Frameworks */,
+				7A3957A02398F9E9003040BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShakeUp;
+			productName = ShakeUp;
+			productReference = 7A3957A22398F9E9003040BA /* ShakeUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A3957B72398F9ED003040BA /* ShakeUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3957CF2398F9ED003040BA /* Build configuration list for PBXNativeTarget "ShakeUpTests" */;
+			buildPhases = (
+				7A3957B42398F9ED003040BA /* Sources */,
+				7A3957B52398F9ED003040BA /* Frameworks */,
+				7A3957B62398F9ED003040BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A3957BA2398F9ED003040BA /* PBXTargetDependency */,
+			);
+			name = ShakeUpTests;
+			productName = ShakeUpTests;
+			productReference = 7A3957B82398F9ED003040BA /* ShakeUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A3957C22398F9ED003040BA /* ShakeUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3957D22398F9ED003040BA /* Build configuration list for PBXNativeTarget "ShakeUpUITests" */;
+			buildPhases = (
+				7A3957BF2398F9ED003040BA /* Sources */,
+				7A3957C02398F9ED003040BA /* Frameworks */,
+				7A3957C12398F9ED003040BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A3957C52398F9ED003040BA /* PBXTargetDependency */,
+			);
+			name = ShakeUpUITests;
+			productName = ShakeUpUITests;
+			productReference = 7A3957C32398F9ED003040BA /* ShakeUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A39579A2398F9E9003040BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "hal-cha-n";
+				TargetAttributes = {
+					7A3957A12398F9E9003040BA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					7A3957B72398F9ED003040BA = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7A3957A12398F9E9003040BA;
+					};
+					7A3957C22398F9ED003040BA = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7A3957A12398F9E9003040BA;
+					};
+				};
+			};
+			buildConfigurationList = 7A39579D2398F9E9003040BA /* Build configuration list for PBXProject "ShakeUp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A3957992398F9E9003040BA;
+			productRefGroup = 7A3957A32398F9E9003040BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A3957A12398F9E9003040BA /* ShakeUp */,
+				7A3957B72398F9ED003040BA /* ShakeUpTests */,
+				7A3957C22398F9ED003040BA /* ShakeUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A3957A02398F9E9003040BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3957B22398F9EC003040BA /* LaunchScreen.storyboard in Resources */,
+				7A3957AF2398F9EC003040BA /* Preview Assets.xcassets in Resources */,
+				7A3957AC2398F9EC003040BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3957B62398F9ED003040BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3957C12398F9ED003040BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A39579E2398F9E9003040BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3957A62398F9E9003040BA /* AppDelegate.swift in Sources */,
+				7A3957A82398F9E9003040BA /* SceneDelegate.swift in Sources */,
+				7A3957AA2398F9E9003040BA /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3957B42398F9ED003040BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3957BD2398F9ED003040BA /* ShakeUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3957BF2398F9ED003040BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3957C82398F9ED003040BA /* ShakeUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A3957BA2398F9ED003040BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A3957A12398F9E9003040BA /* ShakeUp */;
+			targetProxy = 7A3957B92398F9ED003040BA /* PBXContainerItemProxy */;
+		};
+		7A3957C52398F9ED003040BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A3957A12398F9E9003040BA /* ShakeUp */;
+			targetProxy = 7A3957C42398F9ED003040BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A3957B02398F9EC003040BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A3957B12398F9EC003040BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A3957CA2398F9ED003040BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A3957CB2398F9ED003040BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A3957CD2398F9ED003040BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ShakeUp/Preview Content\"";
+				DEVELOPMENT_TEAM = HX689RV433;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShakeUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hal-cha-n.ShakeUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A3957CE2398F9ED003040BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ShakeUp/Preview Content\"";
+				DEVELOPMENT_TEAM = HX689RV433;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShakeUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hal-cha-n.ShakeUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A3957D02398F9ED003040BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HX689RV433;
+				INFOPLIST_FILE = ShakeUpTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hal-cha-n.ShakeUpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeUp.app/ShakeUp";
+			};
+			name = Debug;
+		};
+		7A3957D12398F9ED003040BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HX689RV433;
+				INFOPLIST_FILE = ShakeUpTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hal-cha-n.ShakeUpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeUp.app/ShakeUp";
+			};
+			name = Release;
+		};
+		7A3957D32398F9ED003040BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HX689RV433;
+				INFOPLIST_FILE = ShakeUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hal-cha-n.ShakeUpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShakeUp;
+			};
+			name = Debug;
+		};
+		7A3957D42398F9ED003040BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HX689RV433;
+				INFOPLIST_FILE = ShakeUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hal-cha-n.ShakeUpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShakeUp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A39579D2398F9E9003040BA /* Build configuration list for PBXProject "ShakeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3957CA2398F9ED003040BA /* Debug */,
+				7A3957CB2398F9ED003040BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A3957CC2398F9ED003040BA /* Build configuration list for PBXNativeTarget "ShakeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3957CD2398F9ED003040BA /* Debug */,
+				7A3957CE2398F9ED003040BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A3957CF2398F9ED003040BA /* Build configuration list for PBXNativeTarget "ShakeUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3957D02398F9ED003040BA /* Debug */,
+				7A3957D12398F9ED003040BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A3957D22398F9ED003040BA /* Build configuration list for PBXNativeTarget "ShakeUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3957D32398F9ED003040BA /* Debug */,
+				7A3957D42398F9ED003040BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A39579A2398F9E9003040BA /* Project object */;
+}
