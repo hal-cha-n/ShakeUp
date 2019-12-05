@@ -15,6 +15,8 @@
 		7A3957B22398F9EC003040BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957B02398F9EC003040BA /* LaunchScreen.storyboard */; };
 		7A3957BD2398F9ED003040BA /* ShakeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957BC2398F9ED003040BA /* ShakeUpTests.swift */; };
 		7A3957C82398F9ED003040BA /* ShakeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957C72398F9ED003040BA /* ShakeUpUITests.swift */; };
+		7A3957D82398FB57003040BA /* ShakeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957D72398FB57003040BA /* ShakeTimeView.swift */; };
+		7A3957DB23990070003040BA /* String+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957DA23990070003040BA /* String+format.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7A3957C32398F9ED003040BA /* ShakeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3957C72398F9ED003040BA /* ShakeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeUpUITests.swift; sourceTree = "<group>"; };
 		7A3957C92398F9ED003040BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A3957D72398FB57003040BA /* ShakeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTimeView.swift; sourceTree = "<group>"; };
+		7A3957DA23990070003040BA /* String+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+format.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		7A3957A42398F9E9003040BA /* ShakeUp */ = {
 			isa = PBXGroup;
 			children = (
+				7A3957D923990057003040BA /* extension */,
+				7A3957D52398FAB3003040BA /* SwiftUI */,
 				7A3957A52398F9E9003040BA /* AppDelegate.swift */,
 				7A3957A72398F9E9003040BA /* SceneDelegate.swift */,
-				7A3957A92398F9E9003040BA /* ContentView.swift */,
 				7A3957AB2398F9EC003040BA /* Assets.xcassets */,
 				7A3957B02398F9EC003040BA /* LaunchScreen.storyboard */,
 				7A3957B32398F9EC003040BA /* Info.plist */,
@@ -134,6 +139,31 @@
 				7A3957C92398F9ED003040BA /* Info.plist */,
 			);
 			path = ShakeUpUITests;
+			sourceTree = "<group>";
+		};
+		7A3957D52398FAB3003040BA /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957D62398FB38003040BA /* Parts */,
+				7A3957A92398F9E9003040BA /* ContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		7A3957D62398FB38003040BA /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957D72398FB57003040BA /* ShakeTimeView.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		7A3957D923990057003040BA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957DA23990070003040BA /* String+format.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3957D82398FB57003040BA /* ShakeTimeView.swift in Sources */,
+				7A3957DB23990070003040BA /* String+format.swift in Sources */,
 				7A3957A62398F9E9003040BA /* AppDelegate.swift in Sources */,
 				7A3957A82398F9E9003040BA /* SceneDelegate.swift in Sources */,
 				7A3957AA2398F9E9003040BA /* ContentView.swift in Sources */,
