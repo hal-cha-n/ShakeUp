@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A3957A62398F9E9003040BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A52398F9E9003040BA /* AppDelegate.swift */; };
 		7A3957A82398F9E9003040BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A72398F9E9003040BA /* SceneDelegate.swift */; };
-		7A3957AA2398F9E9003040BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A92398F9E9003040BA /* ContentView.swift */; };
+		7A3957AA2398F9E9003040BA /* ShakeTimesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957A92398F9E9003040BA /* ShakeTimesListView.swift */; };
 		7A3957AC2398F9EC003040BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957AB2398F9EC003040BA /* Assets.xcassets */; };
 		7A3957AF2398F9EC003040BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957AE2398F9EC003040BA /* Preview Assets.xcassets */; };
 		7A3957B22398F9EC003040BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3957B02398F9EC003040BA /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		7A3957C82398F9ED003040BA /* ShakeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957C72398F9ED003040BA /* ShakeUpUITests.swift */; };
 		7A3957D82398FB57003040BA /* ShakeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957D72398FB57003040BA /* ShakeTimeView.swift */; };
 		7A3957DB23990070003040BA /* String+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957DA23990070003040BA /* String+format.swift */; };
+		7A3957DE239906A5003040BA /* ShakeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957DD239906A5003040BA /* ShakeTime.swift */; };
+		7A3957E123990CB4003040BA /* ShakeTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957E023990CB4003040BA /* ShakeTimes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		7A3957A22398F9E9003040BA /* ShakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3957A52398F9E9003040BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A3957A72398F9E9003040BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A3957A92398F9E9003040BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A3957A92398F9E9003040BA /* ShakeTimesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTimesListView.swift; sourceTree = "<group>"; };
 		7A3957AB2398F9EC003040BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A3957AE2398F9EC003040BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A3957B12398F9EC003040BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		7A3957C92398F9ED003040BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A3957D72398FB57003040BA /* ShakeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTimeView.swift; sourceTree = "<group>"; };
 		7A3957DA23990070003040BA /* String+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+format.swift"; sourceTree = "<group>"; };
+		7A3957DD239906A5003040BA /* ShakeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTime.swift; sourceTree = "<group>"; };
+		7A3957E023990CB4003040BA /* ShakeTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				7A3957D923990057003040BA /* extension */,
 				7A3957D52398FAB3003040BA /* SwiftUI */,
+				7A3957DC23990681003040BA /* Model */,
 				7A3957A52398F9E9003040BA /* AppDelegate.swift */,
 				7A3957A72398F9E9003040BA /* SceneDelegate.swift */,
 				7A3957AB2398F9EC003040BA /* Assets.xcassets */,
@@ -145,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7A3957D62398FB38003040BA /* Parts */,
-				7A3957A92398F9E9003040BA /* ContentView.swift */,
+				7A3957A92398F9E9003040BA /* ShakeTimesListView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -164,6 +169,23 @@
 				7A3957DA23990070003040BA /* String+format.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		7A3957DC23990681003040BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957DF23990780003040BA /* ObservableObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A3957DF23990780003040BA /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				7A3957DD239906A5003040BA /* ShakeTime.swift */,
+				7A3957E023990CB4003040BA /* ShakeTimes.swift */,
+			);
+			path = ObservableObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +322,10 @@
 				7A3957D82398FB57003040BA /* ShakeTimeView.swift in Sources */,
 				7A3957DB23990070003040BA /* String+format.swift in Sources */,
 				7A3957A62398F9E9003040BA /* AppDelegate.swift in Sources */,
+				7A3957DE239906A5003040BA /* ShakeTime.swift in Sources */,
 				7A3957A82398F9E9003040BA /* SceneDelegate.swift in Sources */,
-				7A3957AA2398F9E9003040BA /* ContentView.swift in Sources */,
+				7A3957E123990CB4003040BA /* ShakeTimes.swift in Sources */,
+				7A3957AA2398F9E9003040BA /* ShakeTimesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

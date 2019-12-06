@@ -13,20 +13,19 @@ struct ShakeTimeView: View {
     var time: Date
     
     var body: some View {
-        VStack {
-            Toggle(isOn: $isOn) {
-                Text(time.toAlarmFormat())
-                    .bold()
-                    .font(.largeTitle)
-            }
-            .padding(.horizontal)
+        Toggle(isOn: $isOn) {
+            Text(time.toAlarmFormat())
+                .bold()
+                .font(.largeTitle)
         }
+        .padding(.horizontal)
+        .frame(height: 80.0)
     }
 }
 
 struct ShakeTimeView_Previews: PreviewProvider {
     static var previews: some View {
         ShakeTimeView(isOn: false, time: Date())
-        .previewLayout(.fixed(width: 400, height: 70))
+            .previewLayout(.fixed(width: 400, height: 80))
     }
 }
