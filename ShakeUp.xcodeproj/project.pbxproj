@@ -19,7 +19,7 @@
 		7A3957DB23990070003040BA /* String+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957DA23990070003040BA /* String+format.swift */; };
 		7A3957DE239906A5003040BA /* ShakeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957DD239906A5003040BA /* ShakeTime.swift */; };
 		7A3957E123990CB4003040BA /* ShakeTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957E023990CB4003040BA /* ShakeTimes.swift */; };
-		7A3957E3239BC293003040BA /* LocalPushRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957E2239BC293003040BA /* LocalPushRegister.swift */; };
+		7A3957E3239BC293003040BA /* LocalPushCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3957E2239BC293003040BA /* LocalPushCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		7A3957DA23990070003040BA /* String+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+format.swift"; sourceTree = "<group>"; };
 		7A3957DD239906A5003040BA /* ShakeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTime.swift; sourceTree = "<group>"; };
 		7A3957E023990CB4003040BA /* ShakeTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTimes.swift; sourceTree = "<group>"; };
-		7A3957E2239BC293003040BA /* LocalPushRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushRegister.swift; sourceTree = "<group>"; };
+		7A3957E2239BC293003040BA /* LocalPushCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				7A3957DF23990780003040BA /* ObservableObject */,
-				7A3957E2239BC293003040BA /* LocalPushRegister.swift */,
+				7A3957E2239BC293003040BA /* LocalPushCenter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 			files = (
 				7A3957D82398FB57003040BA /* ShakeTimeView.swift in Sources */,
 				7A3957DB23990070003040BA /* String+format.swift in Sources */,
-				7A3957E3239BC293003040BA /* LocalPushRegister.swift in Sources */,
+				7A3957E3239BC293003040BA /* LocalPushCenter.swift in Sources */,
 				7A3957A62398F9E9003040BA /* AppDelegate.swift in Sources */,
 				7A3957DE239906A5003040BA /* ShakeTime.swift in Sources */,
 				7A3957A82398F9E9003040BA /* SceneDelegate.swift in Sources */,

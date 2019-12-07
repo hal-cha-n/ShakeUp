@@ -15,7 +15,9 @@ class ShakeTime: ObservableObject, Identifiable {
     var isOn = false {
         didSet {
             print("\(hour):\(minute) is \(isOn)")
-            
+            if isOn {
+                LocalPushCenter.sendLocalPush(hour: hour, minute: minute)
+            }
         }
     }
 }
