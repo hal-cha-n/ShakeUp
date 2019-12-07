@@ -8,6 +8,7 @@
 
 import Foundation
 import UserNotifications
+import UIKit
 
 class LocalPushCenter {
     static func sendLocalPush(hour: Int, minute: Int) {
@@ -31,6 +32,7 @@ class LocalPushCenter {
         
         // schedule notification by adding request to notification center
         let center = UNUserNotificationCenter.current()
+        center.delegate = (UIApplication.shared.delegate as! AppDelegate)
         center.add(request) { (error) in
             if let error = error {
                 print(error.localizedDescription)

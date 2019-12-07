@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,7 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+        let contentView = ShakeUpView()
+
+        let vc = UIHostingController(rootView: contentView)
+        let window = UIApplication.shared.windows.first
+        window?.rootViewController?.present(vc, animated: true, completion: nil)
+    }
+}
+
 
