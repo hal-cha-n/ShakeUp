@@ -13,24 +13,21 @@ import UIKit
 class LocalPushCenter {
     static func sendLocalPush(hour: Int, minute: Int) {
         
-        // content
         let timeString = String(format: "%02d:%02d", hour, minute)
         let content = UNMutableNotificationContent()
         content.title = "タイトル"
         content.subtitle = "\(timeString)のアラーム"
         content.body = "アラームの時間ですよ〜"
-        content.sound = UNNotificationSound.default
+        content.sound = UNNotificationSound.default // UNNotificationSound(named:) で任意の音を設定可
 
-        // trigger
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(10),
-                                                        repeats: false)
+        let component = DateComponents(hour: hour, minute: minute, second: 0, nanosecond: 0)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: component,
+                                                    repeats: false)
 
-        // request includes content & trigger
         let request = UNNotificationRequest(identifier: "TIMER \(timeString)",
                                             content: content,
                                             trigger: trigger)
         
-        // schedule notification by adding request to notification center
         let center = UNUserNotificationCenter.current()
         center.delegate = (UIApplication.shared.delegate as! AppDelegate)
         center.add(request) { (error) in
