@@ -9,14 +9,17 @@
 import SwiftUI
 
 struct ShakeTimeView: View {
-    @State var isOn = false
-    var time: Date
+    @ObservedObject var shakeTime: ShakeTime
     
     var body: some View {
-        Toggle(isOn: $isOn) {
-            Text(time.toAlarmFormat())
+        Toggle(isOn: $shakeTime.isOn) {
+            Text(String(format: "%02d:%02d", shakeTime.hour, shakeTime.minute))
                 .bold()
                 .font(.largeTitle)
+            
+            if shakeTime.isOn {
+                Text("text")
+            }
         }
         .padding(.horizontal)
         .frame(height: 80.0)
@@ -25,7 +28,9 @@ struct ShakeTimeView: View {
 
 struct ShakeTimeView_Previews: PreviewProvider {
     static var previews: some View {
-        ShakeTimeView(isOn: false, time: Date())
+        let shakeTime = ShakeTime()
+        shakeTime.hour = 22
+        return ShakeTimeView(shakeTime: shakeTime)
             .previewLayout(.fixed(width: 400, height: 80))
     }
 }

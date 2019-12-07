@@ -9,7 +9,13 @@
 import Foundation
 import Combine
 
-class ShakeTime: Identifiable {
-    var date = Date()
-    var isOn = false
+class ShakeTime: ObservableObject, Identifiable {
+    var hour = 0
+    var minute = 0
+    var isOn = false {
+        didSet {
+            print("\(hour):\(minute) is \(isOn)")
+            
+        }
+    }
 }

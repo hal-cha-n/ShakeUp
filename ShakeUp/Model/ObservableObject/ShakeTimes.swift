@@ -12,12 +12,13 @@ class ShakeTimesViewModel: ObservableObject {
     @Published var shakeTimes = ConstructFromUserDefaults()
     
     static private func ConstructFromUserDefaults() -> [ShakeTime] {
-        let now = Date()
         var result = [ShakeTime]()
-        (1...100).forEach { i in
-            var time = ShakeTime()
-            time.date = Date(timeInterval: TimeInterval(60*60*i), since: now)
-            result.append(time)
+        (0...23).forEach { i in
+            let shakeTime = ShakeTime()
+            shakeTime.hour = i
+            shakeTime.minute = 0
+            shakeTime.isOn = false
+            result.append(shakeTime)
         }
         return result
     }

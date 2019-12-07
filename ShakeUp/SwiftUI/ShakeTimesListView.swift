@@ -13,8 +13,8 @@ struct ShakeTimesListView: View {
     
     var body: some View {
         List {
-            ForEach(shakeTimes.shakeTimes) { shakeTimes in
-                ShakeTimeView(isOn: false, time: shakeTimes.date)
+            ForEach(shakeTimes.shakeTimes) { shakeTime in
+                ShakeTimeView(shakeTime: shakeTime)
             }
         }
     }
