@@ -16,10 +16,6 @@ struct ShakeTimeView: View {
             Text(String(format: "%02d:%02d", shakeTime.hour, shakeTime.minute))
                 .bold()
                 .font(.largeTitle)
-            
-            if shakeTime.isOn {
-                Text("text")
-            }
         }
         .padding(.horizontal)
         .frame(height: 80.0)

@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ShakeUpView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @ObservedObject(initialValue: ShakeViewModel()) var shakeViewModel: ShakeViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(String(format: "%3.0f P", Float(shakeViewModel.power)))
+            .font(.largeTitle)
     }
 }
 
