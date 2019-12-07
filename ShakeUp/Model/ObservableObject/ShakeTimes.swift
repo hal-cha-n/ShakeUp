@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 class ShakeTimesViewModel: ObservableObject {
     @Published var shakeTimes = ConstructFromUserDefaults()
@@ -21,5 +22,16 @@ class ShakeTimesViewModel: ObservableObject {
             result.append(shakeTime)
         }
         return result
+    }
+    
+    init() {
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                print("Allowed")
+            } else {
+                print("Didn't allowed")
+            }
+        }
     }
 }
