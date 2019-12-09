@@ -13,8 +13,22 @@ struct ShakeUpView: View {
     @ObservedObject(initialValue: ShakeViewModel()) var shakeViewModel: ShakeViewModel
     
     var body: some View {
-        Text(String(format: "%3.0f P", Float(shakeViewModel.power)))
-            .font(.largeTitle)
+        VStack(alignment: .center, spacing: 16) {
+            Text(String(format: "%3.0f P", Float(shakeViewModel.power)))
+                .font(.largeTitle)
+            if shakeViewModel.isAwaked {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    Text("起きた!")
+                        .font(.largeTitle)
+                })
+            }
+        }.onAppear {
+            self.shakeViewModel.playSound()
+        }.onDisappear {
+            self.shakeViewModel.stopSound()
+        }
     }
 }
 

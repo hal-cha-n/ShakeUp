@@ -10,26 +10,43 @@ import Foundation
 import CoreMotion
 import Combine
 import UIKit
+import AVKit
 
 class ShakeViewModel: ObservableObject {
     @Published var power = Double(0)
+    @Published var isAwaked = false
     let motionManager = CMMotionManager()
+    var audioPlayer: AVAudioPlayer?
 
     init() {
-        
-        if motionManager.isDeviceMotionAvailable {
-            motionManager.deviceMotionUpdateInterval = 0.1
+        guard motionManager.isDeviceMotionAvailable else { return }
+        motionManager.deviceMotionUpdateInterval = 0.1
 
-            motionManager.startDeviceMotionUpdates(to: OperationQueue.current!, withHandler: {(motion:CMDeviceMotion?, error:Error?) in
-                print(motion?.userAcceleration)
-                self.power += abs(motion?.userAcceleration.y ?? 0)
-                
-                if self.power >= 100 {
-                    let window = UIApplication.shared.windows.first
-                    window?.rootViewController?.presentedViewController?.dismiss(animated: true)
-                }
-            })
+        motionManager.startDeviceMotionUpdates(to: OperationQueue.current!, withHandler: {(motion:CMDeviceMotion?, error:Error?) in
+            print(motion?.userAcceleration)
+            self.power += abs(motion?.userAcceleration.y ?? 0)
+            
+            if self.power >= 100 {
+                self.isAwaked = true
+            }
+        })
+    }
+
+    
+    func playSound() {
+        guard let path = Bundle.main.url(forResource: "alerm", withExtension: "mp3") else {
+            return
         }
-        
+
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+        try! AVAudioSession.sharedInstance().setActive(true)
+
+        audioPlayer = try! AVAudioPlayer(contentsOf: path)
+        audioPlayer?.numberOfLoops = -1
+        audioPlayer?.play()
+    }
+    
+    func stopSound() {
+        audioPlayer?.stop()
     }
 }
