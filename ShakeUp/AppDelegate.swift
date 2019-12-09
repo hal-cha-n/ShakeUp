@@ -38,11 +38,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
-        let contentView = ShakeUpView()
-
-        let vc = UIHostingController(rootView: contentView)
-        let window = UIApplication.shared.windows.first
-        window?.rootViewController?.present(vc, animated: true, completion: nil)
+        ShakeTimesViewModel.launchWakeUp.send(true)
     }
 }
 

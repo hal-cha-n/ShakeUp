@@ -17,6 +17,9 @@ struct ShakeTimesListView: View {
                 ShakeTimeView(shakeTime: shakeTime)
             }
         }
+        .sheet(isPresented: $shakeTimes.isPresentingShakeUpView) {
+            ShakeUpView()
+        }
     }
 }
 

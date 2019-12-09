@@ -17,9 +17,11 @@ class ShakeViewModel: ObservableObject {
     @Published var isAwaked = false
     let motionManager = CMMotionManager()
     var audioPlayer: AVAudioPlayer?
+    
+    func startWakeUp() {
+        guard motionManager.isDeviceMotionAvailable,
+              let path = Bundle.main.url(forResource: "alerm", withExtension: "mp3") else { return }
 
-    init() {
-        guard motionManager.isDeviceMotionAvailable else { return }
         motionManager.deviceMotionUpdateInterval = 0.1
 
         motionManager.startDeviceMotionUpdates(to: OperationQueue.current!, withHandler: {(motion:CMDeviceMotion?, error:Error?) in
@@ -30,13 +32,6 @@ class ShakeViewModel: ObservableObject {
                 self.isAwaked = true
             }
         })
-    }
-
-    
-    func playSound() {
-        guard let path = Bundle.main.url(forResource: "alerm", withExtension: "mp3") else {
-            return
-        }
 
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
         try! AVAudioSession.sharedInstance().setActive(true)
@@ -46,7 +41,8 @@ class ShakeViewModel: ObservableObject {
         audioPlayer?.play()
     }
     
-    func stopSound() {
+    func finishWakeUp() {
+        motionManager.stopDeviceMotionUpdates()
         audioPlayer?.stop()
     }
 }

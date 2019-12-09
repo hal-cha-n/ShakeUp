@@ -25,9 +25,9 @@ struct ShakeUpView: View {
                 })
             }
         }.onAppear {
-            self.shakeViewModel.playSound()
+            self.shakeViewModel.startWakeUp()
         }.onDisappear {
-            self.shakeViewModel.stopSound()
+            self.shakeViewModel.finishWakeUp()
         }
     }
 }
